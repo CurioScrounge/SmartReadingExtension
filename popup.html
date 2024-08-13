@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Smart Reader</title>
+  <meta charset="UTF-8">
+  <title>Screen Reader</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <button id="read">Read Page</button>
+  <h1>Screen Reader</h1>
+  <select id="tone">
+    <option value="happy">Happy</option>
+    <option value="sad">Sad</option>
+    <option value="suggestive">Suggestive</option>
+  </select>
+  <button id="play">Play</button>
+  <button id="pause">Pause</button>
   <script src="popup.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
-chrome.runtime.onInstalled.addListener(() => {
-    console.log("AI Voice Reader installed.");
-  });
+chrome.runtime.onMessageExternal.addListener( (request, sender, sendResponse) => {
+  if (request.action === 'play' || request.action === 'pause') {
+    sendResponse({ status: 'success' });
+  }
+});
